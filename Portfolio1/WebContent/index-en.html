@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<link rel="stylesheet" type="text/css" href="newindex.css" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+</head>
+<body>
+  <div class="head">
+   <h1>Portfolio for Bo Yang</h1>
+   <div class="headlang">
+     <p><a href="index.jsp">Swedish</a></p>
+     <p><a href="index-en.html">English</a></p>
+   </div>
+  </div>
+    <ul id="navigator">
+          <li id="home"><a href="index-en.html">Home</a>
+          <li id="menuedu">Education</li>
+          <li id="menuexp">Experience</li>
+          
+          <li id="menuproject">Projects</li>
+          <li id="menulang">Languages</li>
+   </ul> 
+   <div class="intro">
+      <div class="myphoto">
+		<img src="mypic.jpg" alt="my photo" height="auto" width="200px" />
+      </div>
+     
+          <p >Bo Yang</p>
+          <p>youthbo@hotmail.com</p>
+       
+   </div>
+   <div id="detail">
+       <p class="about" align="justify">Hello!My name is Bo Yang.I am from China och have been living in Sweden
+       for 8 years.</p>
+       <p class="about" align="justify">I am passionate about solving problems and learning new things. I am trying to improve myself every day by contineously taking course or learning from other people. I am a quick learner and service-minded.Now I have strong interests in programming and study as java developer.</p>
+       <p class="about" align="justify">In my spare time, I like reading,traveling,jogging and cooking.
+         <div class="detail" id="education">
+			<h2 id="showedu">Education</h2>
+			<dl id="showeducation">
+				<dt>2015.08-</dt>
+				<dd>Java developer, Teknikhögskolan, Stockholm</dd>
+				<dt>2007.08-2010.06</dt>
+				<dd>Computer science(120p), Uppsala University, Uppsala</dd>
+				<dd>Thesis:"JSON Streams Querying System", Uppsala Database
+					Laboratory</dd>
+				<dt>2000.09-2004.06</dt>
+				<dd>Computer science, Beijing University of Posts och
+					Telecommunications, Beijing, China</dd>
+
+			</dl>
+		</div>
+		<div class="detail" id="experience">
+			<h2 id="clicktoshow">Experience</h2>
+			<dl id="showexperience">
+			    <dt>2016.04-2016.06 Internship, Aurora Innovation, Uppsala, Sweden</dt>
+				<dd>My responsibility is to continue develop Aurora Innovation's product TeleQ, which includes to fix some bugs in system, create new types of report, add new functions and so on.</dd>
+				
+				<dt>2012.04-2013.04 Consultant, Aicent Inc, Sweden</dt>
+				<dd>I tested Wifi hotspot signal in Swedan and helped my colleague in China to troubleshoot if there was any problem with the hotspot.</dd>
+				
+				<dt>2011.01-2011.07 2nd line SMS support engineer, Aicent lnc,
+					Beijing, China</dt>
+				<dd>My work includes 2 parts.One part is to provide technical support to customers which includes technical implementation, testing, troubleshooting and problem resolving, and all related coordination after commercial. 
+				    The other part is pre-sale support which includes providing technical solution, Q&A of service proposal, technical implementation, and communications with all related parties.
+				 </dd>
+				
+				<dt>2004.07-2007.06 Assistant System Engineer, Data Center,
+					Bank of China, Beijing</dt>
+				<dd>
+				  <ul class="expul">
+                   <li>Installed, customized and maintained the middle-ware MQ on IBM mainframe systems.</li>
+                   <li>Suggested, planed and implemented improvements of system.</li>
+                   <li>Tested communication with branches, provided technical support if necessary.</li>
+                   <li>System troubleshooting and problem resolving.</li>
+                   <li>Created and maintained service documents.</li>
+                 </ul> 
+			
+                
+                </dd>
+
+			</dl>
+		</div>
+
+		<div class="detail" id="project">
+			<h2 id="showprojekt">Projects</h2>
+			<!-- <p class="projektlink">
+				<a href="background/choosebackground.jsp">Choose picture and
+					background</a>
+			</p> -->
+			<p class="projektlink">
+			        <a href="https://github.com/youthbo/Database-Project" target="_blank">
+						Database project</a>
+			</p>
+			<p class="projektlink">
+			   <a href="https://play.google.com/store/apps/details?id=bo.com.camera3d">Bo's interval camera</a>
+			</p>
+			<p class="projektlink">
+				<a href="gold/index.jsp">Gold project</a>
+			</p>
+			<p class="projektlink">
+				<a href="SimpleGame/index.jsp">A simple game</a>
+			</p>
+			<p class="projektlink">
+				<a href="Book House/index1.html">Book House</a>
+			</p>
+		</div>
+		<div class="detail" id="language">
+			<h2 id="showlang" >Languages</h2>
+			<table id="showlangs">
+			  <tr>
+				<td class="showlang">-Chinese</td>
+				<td class="showlang">Native speaker</td>
+			  </tr>
+			  <tr>
+				<td class="showlang">-English</td>
+				<td class="showlang">Fluent</td>
+			  </tr>
+			  <tr>
+				<td class="showlang">-Swedish</td>
+				<td class="showlang">Fluent</td>
+			  </tr>
+			</table>
+		</div>
+		
+
+   </div>
+   <div id="footer">
+	      <div id="contact-text">
+		    <h4> Copyright Bo Yang 2016 youthbo@hotmail.com</h4>
+	      </div>
+        </div>
+   <script type="text/javascript">
+   $(document).ready(function() {
+	   $("#home").addClass("active");
+	   $("#project").show();
+	   $("#showprojekt").hide();
+	   $("li").click(function(e){
+		   $("li").removeClass("active");
+		   $(this).addClass("active");
+	   });
+	   $("#menuedu").click(function(e){
+		   $(".detail").hide();
+		   $(".about").hide();
+		   $("#education").show();
+	   });
+	   $("#menuexp").click(function(e){
+		   $(".detail").hide();
+		   $(".about").hide();
+		   $("#experience").show();
+	   });
+	   $("#menuproject").click(function(e){
+		   $(".detail").hide();
+		   $(".about").hide();
+		   $("#project").show();
+	   });
+	   $("#menulang").click(function(e){
+		   $(".detail").hide();
+		   $(".about").hide();
+		   $("#language").show();
+	   });
+	   /*
+	   $("#navigator li").click(function (e){
+		   
+		   e.preventDefault();
+		    // get the href
+		    var href = $(this).attr("href");
+		    $('#detail').load(href);
+		
+		 });
+	   */
+	  
+   });
+   </script>
+</body>
+</html>

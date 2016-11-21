@@ -1,0 +1,201 @@
+body {margin: 0 auto;}
+
+/*
+|--------------------------------------------------------------------------
+|datepicker / Irina Fatkoulin
+|--------------------------------------------------------------------------
+*/
+.ui-highlight .ui-state-default{
+			background: red !important;
+			border-color: red !important;
+			color: white !important;
+		}
+.ui-highlight1 .ui-state-default{
+			background: green !important;
+			border-color: green !important;
+			color: black !important;
+		}
+/*
+|--------------------------------------------------------------------------
+|Comment form / Irina Fatkoulin
+|--------------------------------------------------------------------------
+*/		
+#feedback {
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-x: hidden;
+    width: 100%;
+    height:auto;
+}
+#all {
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-x: hidden;
+    width: 350px;
+    max-height:100px;
+    min-height: auto;
+}
+/*
+|--------------------------------------------------------------------------
+|Header / Kais ghedmasi
+|--------------------------------------------------------------------------
+*/
+
+h1, h2, h3, h4, h5, h6 {font-family: 'Quicksand', sans-serif;}
+p {font-family: 'Quicksand', sans-serif; color: black;}
+
+
+/*
+|--------------------------------------------------------------------------
+|Header / Kais ghedmasi
+|--------------------------------------------------------------------------
+*/
+
+#header{ position: fixed; background-color: white; width: 100%; top: 0px; text-align: center; opacity: 0.4; border-bottom: 1px solid black;}
+#header-1{ position: absolute; background-color: white; width: 100%; top: 0px; text-align: center; opacity: 0.4; border-bottom: 1px solid black;}
+#header img{ width: 20%;}
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+|Titel / Kais ghedmasi
+|--------------------------------------------------------------------------
+*/
+
+.titel {text-align: center; }
+.titel hr{width: 140px; margin-left: 727px; margin-bottom: 30px; border-style: solid; border-color: #FFC374;  }
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Section / Kais Ghedamsi	
+|--------------------------------------------------------------------------
+*/
+
+.section {background-repeat: no-repeat; background-image: url("../img/girl2.jpg"); background-position: 50% 50%;
+		  min-height: 650px; width: 100%; margin-bottom: 50px;}
+
+
+/*
+|--------------------------------------------------------------------------
+| Second Section / Kais Ghedamsi
+|--------------------------------------------------------------------------
+*/
+
+div.img { border: 1px solid #ccc; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+div.img:hover { border: 1px solid #777;}
+
+div.img img { width: 100%; height: auto;}
+
+div.desc { padding: 15px; text-align: center;}
+
+* { box-sizing: border-box;}
+
+.responsive { padding: 0 6px; float: left; width: 24.99999%; height: auto; margin-bottom: 50px;}
+
+@media only screen and (max-width: 700px){
+    .responsive { width: 49.99999%; margin: 6px 0;}
+}
+
+@media only screen and (max-width: 500px){
+    .responsive { width: 100%;}
+}
+
+.clearfix:after { content: ""; display: table; clear: both;}
+
+/*
+|--------------------------------------------------------------------------
+| HusBook JSP / Kais Ghedamsi
+|--------------------------------------------------------------------------
+*/
+#housebookbody {background-image: url("../img/bg2.jpg"); width: 100%}
+.wrapper {  /*margin: auto 0;*/ margin-left: 100px; margin-right: auto; margin-top: 80px;width:60%}
+#titel-1 hr{width: 80px; color: #FFC374; margin-left: 0px; border: 1px solid;}
+#description { border: 1px solid black; padding: 10px; width: 90%; height: 200px; text-align: justify; margin-bottom: 20px;} 
+
+/*
+|--------------------------------------------------------------------------
+| IMG - 1,2 / Kais Ghedamsi
+|--------------------------------------------------------------------------
+*/
+.img-one { margin-bottom: 20px;}
+.img-two { margin-bottom: 20px;}
+.more-pics td, th{ padding: 0 25px 0 0; }
+
+
+/*
+|--------------------------------------------------------------------------
+| Form Action HTML / Kais Ghedamsi
+|--------------------------------------------------------------------------
+*/
+.wrapper-2{ margin-left:100px; margin-right: auto; padding-right: 50px;} 
+input[type=text], [type=email], select { width: 70%; padding: 12px 20px;  display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;
+							 margin-bottom: 10px;}
+							
+textarea { padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; width: 70%; height: 100px;}
+			
+input[type=submit] { background-color: #FFC374; border: none; color: white; padding: 16px 32px; text-decoration: none; 
+					margin: 4px 2px; cursor: pointer; }
+					
+/*
+|--------------------------------------------------------------------------
+| Form Review / Kais Ghedamsi
+|--------------------------------------------------------------------------
+*/
+
+#wrapper-review {position:absolute; top:60px;right:100px;width:20%}
+#feedback textarea{width:250px;}
+#guest-review  hr{ width: 80px; color: #FFC374; border: 1px solid; margin-left:5px;  }
+#form-review {}
+
+/*
+|--------------------------------------------------------------------------
+| Thanks HTML / Kais Ghedamsi
+|--------------------------------------------------------------------------
+*/
+.wrapper-3 {width: 1024px; margin-left:auto; margin-right: auto; padding-left: 50px; position: center center;}
+#thanksbg {background-image: url("../img/bg1.jpg"); background-position: cover; }
+#title-10 h2{color: white;}
+#home-button input[type=submit] { background-color: #FFC374; border: none; color: white; padding: 16px 32px; text-decoration: none; margin: 4px 2px; 
+							cursor: pointer; position: center;}
+
+/*
+|--------------------------------------------------------------------------
+| Footer / Kais Ghedamsi
+|--------------------------------------------------------------------------
+*/
+#footer {background-color: black;  width: 100%; clear: both;
+    	position: relative; z-index: 10; height: 80px; margin-top: 3em;  border-top: 1px solid grey; opacity: 0.8; padding-top: 10px;}
+
+
+#contact-text h4{color: #FFC374; text-align: center; paddind-top: 10px;}
+
+
+/*
+|--------------------------------------------------------------------------
+| Result JSP / Bo Yang
+|--------------------------------------------------------------------------
+*/
+#bookinfo{
+	position:relative;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+#bookinfotitle{
+	text-align:center;
+}
+
+.centerhome{
+	position:relative;
+    margin: auto;
+    width: 50px;
+    padding: 10px;
+}

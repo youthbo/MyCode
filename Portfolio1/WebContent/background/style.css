@@ -1,0 +1,20 @@
+@CHARSET "ISO-8859-1";
+
+h1{
+    text-align:left;
+    font-size:2.5em;
+	margin:auto;
+}
+img {
+	width:200px;
+	height:160px;
+	margin:10px;
+	
+}
+#resultbody {
+  background-repeat: no-repeat;
+}
+
+.bsdiv{
+	margin:20px;
+}

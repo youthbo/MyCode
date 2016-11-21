@@ -1,0 +1,72 @@
+@CHARSET "ISO-8859-1";
+.head{
+	height:100px;
+	text-align:center;
+	background-color:#ffd700;
+	padding:8px;
+	
+}
+
+.bscontainer {
+	padding:10px;
+	position:relative;
+    width:400px;
+    margin:auto;
+ 
+}
+#bsdiv{
+	position:absolute;
+	left:0px;
+	top:50px;
+	float:left;
+}
+
+.goldpicdiv{
+	position:absolute;
+	left:250px;
+	float:right;
+	margin:30px 10px 10px 10px;
+	border:10px;
+
+}
+
+.pris{
+	color:red;
+}
+
+.back{
+	position:relative;
+    width:50px;
+    margin:auto;
+}
+
+/*
+|--------------------------------------------------------------------------
+|goldbuy and goldsell.jsp
+|--------------------------------------------------------------------------
+*/	
+
+.showcontainer{
+	position:absolute;
+    top:50%;
+    left:50%;
+    margin:-100px 0 0 -150px;
+}
+.showamount{
+	
+	border-style: solid;
+	width:400px;
+	background-color:#ffd700;
+
+}
+.dittpris{
+	text-align:center;
+	font-style:italic;
+	font-size:2.5em;
+}
+
+.sb {
+	font-size:3em;
+	text-align:center;
+	font-color:red;	
+}

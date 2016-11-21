@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>Portfolio</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+   <servlet-name>Servlet</servlet-name>
+   <servlet-class>ju15.simplegame.servlet.Servlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>Servlet</servlet-name>
+   <url-pattern>/SimpleGame/servlet</url-pattern>
+</servlet-mapping>
+<servlet>
+   <servlet-name>DieServlet</servlet-name>
+   <servlet-class>ju15.simplegame.servlet.DieServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>DieServlet</servlet-name>
+   <url-pattern>/SimpleGame/die</url-pattern>
+</servlet-mapping>
+<servlet>
+   <servlet-name>GoldServlet</servlet-name>
+   <servlet-class>ju15.gold.servlet.MyServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>GoldServlet</servlet-name>
+   <url-pattern>/gold/myservlet</url-pattern>
+</servlet-mapping>
+<servlet>
+   <servlet-name>HouseServlet</servlet-name>
+   <servlet-class>ju15.book.servlet.HouseServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>HouseServlet</servlet-name>
+   <url-pattern>/Book House/House</url-pattern>
+</servlet-mapping>
+<servlet>
+   <servlet-name>bookServlet</servlet-name>
+   <servlet-class>ju15.book.servlet.Servlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>bookServlet</servlet-name>
+   <url-pattern>/Book House/Servlet</url-pattern>
+</servlet-mapping>
+<servlet>
+   <servlet-name>Reader</servlet-name>
+   <servlet-class>ju15.book.servlet.Reader</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>Reader</servlet-name>
+   <url-pattern>/Book House/Reader</url-pattern>
+</servlet-mapping>
+<servlet>
+   <servlet-name>ReadFeedback</servlet-name>
+   <servlet-class>ju15.book.servlet.ReadFeedback</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>ReadFeedback</servlet-name>
+   <url-pattern>/Book House/ReadFeedback</url-pattern>
+</servlet-mapping>
+<servlet>
+   <servlet-name>ReadSistaComment</servlet-name>
+   <servlet-class>ju15.book.servlet.ReadSistaComment</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>ReadSistaComment</servlet-name>
+   <url-pattern>/Book House/ReadSistaComment</url-pattern>
+</servlet-mapping>
+<servlet>
+   <servlet-name>SparaComment</servlet-name>
+   <servlet-class>ju15.book.servlet.SparaComment</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>SparaComment</servlet-name>
+   <url-pattern>/Book House/SparaComment</url-pattern>
+</servlet-mapping>
+
+
+</web-app>
