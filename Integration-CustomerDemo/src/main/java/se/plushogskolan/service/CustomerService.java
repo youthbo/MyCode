@@ -38,9 +38,14 @@ public class CustomerService {
 		return repository.get(id);
 	}
 
+	public List<Customer> getCustomers(){
+	   return repository.getAll();
+	}
+	
 	public List<Customer> getCustomers(int page, int size,String sort) {
 		List<Customer> customers = repository.getAll();
 		List<Customer> result = new ArrayList<>();
+		//customers.subList(0, customers.size()<=size? customers.size():size);
 		if (customers.size() > page * size){
 			
 		   if (customers.size() < page * size + size) {

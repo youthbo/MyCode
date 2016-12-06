@@ -1,15 +1,19 @@
 package se.plushogskolan.config;
 
-import org.glassfish.jersey.server.ResourceConfig;
-import org.springframework.context.annotation.Configuration;
+import javax.ws.rs.ApplicationPath;
 
+import org.glassfish.jersey.server.ResourceConfig;
+import org.springframework.stereotype.Component;
+
+import se.plushogskolan.resource.CustomerExceptionMapper;
 import se.plushogskolan.resource.CustomerResource;
 
-
-@Configuration
+@Component
+//@ApplicationPath("bo")
 public class JerseyConfig extends ResourceConfig{
 	public JerseyConfig() {
 		        register(CustomerResource.class);
+		        register(CustomerExceptionMapper.class);
 		    }
 
 }

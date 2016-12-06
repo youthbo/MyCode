@@ -7,7 +7,6 @@ import java.io.StringWriter;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
-import javax.xml.transform.Result;
 
 public class CustomerParser {
 
@@ -24,7 +23,7 @@ public class CustomerParser {
 	}
 
 	public static String parseToXml(Customer customer) {
-		// use JAXB to convert object to XML, need to add annotation and setter in Customer
+		// use JAXB to convert object to XML, need to add annotation in Customer
 		// class
 		JAXBContext context;
 		StringWriter writer = new StringWriter();
@@ -33,12 +32,9 @@ public class CustomerParser {
 			Marshaller m = context.createMarshaller();
 			m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 			m.marshal(customer, writer);
-
 		} catch (JAXBException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 		return writer.toString();
 	}
 

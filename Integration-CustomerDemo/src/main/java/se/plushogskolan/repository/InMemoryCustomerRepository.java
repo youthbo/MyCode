@@ -23,9 +23,7 @@ public class InMemoryCustomerRepository implements CustomerRepository {
 
 	@Override
 	public void update(Long id,Customer customer) {	
-			customers.put(id, customer);
-		
-		
+			customers.put(id, customer);	
 	}
 
 	@Override
